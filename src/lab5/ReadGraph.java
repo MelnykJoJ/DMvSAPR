@@ -2,11 +2,11 @@ import java.io.*;
 import java.util.*;
 
 public class ReadGraph {
-	public static GraphInfo readGraph(String filename) {
+	public static GraphInfo readGraph("src/lab5/lab5.txt") {
 		GraphInfo g = new GraphInfo();
 
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(filename));
+			BufferedReader br = new BufferedReader(new FileReader("src/lab5/lab5.txt"));
 
 			g.name = br.readLine();
 			g.nNodes = Integer.parseInt(br.readLine());
